@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Homework 3</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body>
+    <h2>Log-in w/ Local Storage</h2>
+
+    <form name="mainForm" onsubmit="return false">
+
+    <fieldset id="userTypeField">
+        <legend>User Type</legend>
+        <label for="newUserButton">Click for New User</label>
+        <button id="newUserButton" onclick="newUser()">New User</button>
+        <label for="existingUserButton">Click for Existing User</label>
+        <button id="existingUserButton" onclick="existingUser()">Existing User</button>
+    </fieldset>
+        
+    <fieldset id="registerField">
+        <legend>New User</legend>
+        
+        <label for="registerName">Username: </label>
+        <input name="registerName" id="registerName">
+
+        <label for="pWord">Password: </label>
+        <input name="pWord" id="pWord">
+        <br>
+        <label for="city">City: </label>
+        <input name="city" id="city">
+
+        <label for="state">State: </label>
+        <input name="state" id="state">
+
+        <button id="" onclick="newSubmission()">Login</button>
+    </fieldset>
+
+    <fieldset id="loginField">
+        <legend>Existing User</legend>
+
+        <label for="registerName">Username: </label>
+        <input name="registerName" id="registerName">
+
+        <label for="password">Password: </label>
+        <input name="password" id="password">
+
+        <button>Login</button>
+    </fieldset>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
