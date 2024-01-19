@@ -28,7 +28,7 @@ function newSubmission() {
     localStorage.setItem("city", city);
     let state = document.getElementById("state").value;
     localStorage.setItem("state", state);
-     if (userName != null && password != null && city != null && state != null) {
+     if (userName != "" && password != "" && city != "" && state != "") {
         field2.disabled = true;
         alert(`Welcome ${userName}`);
      }
