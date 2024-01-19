@@ -29,7 +29,7 @@ function newSubmission() {
     let state = document.getElementById("state").value;
     localStorage.setItem("state", state);
      if (userName != null && password != null && city != null && state != null) {
-        field2.disabled = false;
+        field2.disabled = true;
         alert(`Welcome ${userName}`);
      }
      else {
@@ -38,5 +38,13 @@ function newSubmission() {
 }
 
 function existingSubmission() {
-    
+    let entryName = document.getElementById("loginName").value;
+    let entryPassword = document.getElementById("password").value;
+    if (entryName == localStorage.getItem("user") && entryPassword == localStorage.getItem("password")) {
+        alert(`Welcome back ${entryName}`);
+        field3.disabled = true;
+    }
+    else {
+        alert("Invalid combination")
+    }
 }

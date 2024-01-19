@@ -12,43 +12,47 @@
 
     <form name="mainForm" onsubmit="return false">
 
-    <fieldset id="userTypeField">
-        <legend>User Type</legend>
-        <label for="newUserButton">Click for New User</label>
-        <button id="newUserButton" onclick="newUser()">New User</button>
-        <label for="existingUserButton">Click for Existing User</label>
-        <button id="existingUserButton" onclick="existingUser()">Existing User</button>
-    </fieldset>
-        
-    <fieldset id="registerField">
-        <legend>New User</legend>
-        
-        <label for="registerName">Username: </label>
-        <input name="registerName" id="registerName">
+        <fieldset id="userTypeField">
+            <legend>User Type</legend>
 
-        <label for="pWord">Password: </label>
-        <input name="pWord" id="pWord">
-        <br>
-        <label for="city">City: </label>
-        <input name="city" id="city">
+            <label for="newUserButton">Click for New User</label>
+            <button id="newUserButton" onclick="newUser()">New User</button>
 
-        <label for="state">State: </label>
-        <input name="state" id="state">
+            <label for="existingUserButton">Click for Existing User</label>
+            <button id="existingUserButton" onclick="existingUser()">Existing User</button>
+        </fieldset>
 
-        <button id="" onclick="newSubmission()">Login</button>
-    </fieldset>
+        <fieldset id="registerField">
+            <legend>New User</legend>
 
-    <fieldset id="loginField">
-        <legend>Existing User</legend>
+            <label for="registerName">Username: </label>
+            <input name="registerName" id="registerName">
 
-        <label for="registerName">Username: </label>
-        <input name="registerName" id="registerName">
+            <label for="pWord">Password: </label>
+            <input name="pWord" id="pWord">
 
-        <label for="password">Password: </label>
-        <input name="password" id="password">
+            <br>
 
-        <button>Login</button>
-    </fieldset>
+            <label for="city">City: </label>
+            <input name="city" id="city">
+
+            <label for="state">State: </label>
+            <input name="state" id="state">
+
+            <button id="registerButton" onclick="newSubmission()">Login</button>
+        </fieldset>
+
+        <fieldset id="loginField">
+            <legend>Existing User</legend>
+
+            <label for="loginName">Username: </label>
+            <input name="loginName" id="loginName">
+
+            <label for="password">Password: </label>
+            <input name="password" id="password">
+
+            <button id="loginButton" onclick="existingSubmission()">Login</button>
+        </fieldset>
 
     </form>
     <script src="main.js"></script>
